@@ -1,0 +1,11 @@
+framework module ManiTrust_SDK {
+  umbrella header "ManiTrust_SDK.h"
+
+  export *
+  module * { export * }
+}
+
+module ManiTrust_SDK.Swift {
+    header "ManiTrust_SDK-Swift.h"
+    requires objc
+}
