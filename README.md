@@ -1,6 +1,3 @@
-# ManiTrust
-GitHub of ManiTrust Service.
-
 ## Installation
 
 ##### CocoaPods 
