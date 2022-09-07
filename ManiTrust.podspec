@@ -8,7 +8,7 @@ Pod::Spec.new do |spec|
   spec.documentation_url = "https://github.com/mnfgithub/manitrust-sdk/blob/main/README.md"
     spec.license        = "https://opensource.org/licenses/MIT"
   spec.author         = { "Manitrust" => "d.kovacs@manifone.com" }
-  spec.source         = { :http => "https://github.com/mnfgithub/manitrust-sdk/releases/download/1.9.0/ManiTrust_SDK.xcframework.zip" }
+  spec.source         = { :http => "https://github.com/mnfgithub/manitrust-sdk/releases/download/" + ENV['LIB_VERSION'] + "/ManiTrust_SDK.xcframework.zip" }
   spec.vendored_frameworks = "Sources/ManiTrust_SDK.xcframework"
   spec.swift_version             = ['5.0', '5.1', '5.2']
   spec.ios.deployment_target     = '12.0'
