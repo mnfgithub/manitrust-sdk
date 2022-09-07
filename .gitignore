@@ -95,6 +95,8 @@ Packages
 xcuserdata
 #*.xcodeproj
 
+### Mac System ###
+.DS_Store
 
 ### Xcode ###
 

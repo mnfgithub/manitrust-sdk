@@ -1,0 +1,57 @@
+name: CI main
+
+on:
+  push:
+    branches:
+      - 'main'
+    tags-ignore:
+      - '**'
+
+jobs:
+  release:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        clean: 'true'
+        fetch-depth: 0
+    - name: Install GitVersion
+      uses: gittools/actions/gitversion/setup@v0.9.7
+      with:
+        versionSpec: '5.x'
+    - name: Determine Version
+      id: gitversion
+      uses: gittools/actions/gitversion/execute@v0.9.7
+      with:
+        useConfigFile: true
+        configFilePath: ./.github/gitversion.yml
+    - name: Create arhive framework
+      run: zip -r ManiTrust_SDK.xcframework.zip "./Sources/ManiTrust_SDK.xcframework" "./LICENSE"
+    - name: release
+      uses: actions/create-release@v1
+      id: create_release
+      with:
+        draft: false
+        prerelease: false
+        release_name: ${{ steps.gitversion.outputs.SemVer }}
+        tag_name: ${{ steps.gitversion.outputs.SemVer }}
+        body: ${{ github.event.head_commit.message }}
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Upload binary
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./ManiTrust_SDK.xcframework.zip
+        asset_name: ManiTrust_SDK.xcframework.zip
+        asset_content_type: application/zip
+    - name: Prepare for release
+      run:  |
+        set -eo pipefail
+        export LIB_VERSION=${{ steps.gitversion.outputs.SemVer }}
+        pod spec lint --allow-warnings
+        pod trunk push --allow-warnings
+      env:
+        COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOA_KEY }}
