@@ -1,0 +1,648 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ManiTrust_SDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CryptoKit",
+        "printedName": "CryptoKit",
+        "declKind": "Import",
+        "moduleName": "ManiTrust_SDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ManiTrust_SDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Contacts",
+        "printedName": "Contacts",
+        "declKind": "Import",
+        "moduleName": "ManiTrust_SDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UserNotifications",
+        "printedName": "UserNotifications",
+        "declKind": "Import",
+        "moduleName": "ManiTrust_SDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ManiTrust_SDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ManiTrustBuilderProtocol",
+        "printedName": "ManiTrustBuilderProtocol",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "configureSDK",
+            "printedName": "configureSDK(url:projectID:apiKey:automaticContactPermission:automaticPushPermission:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ManiTrust_SDK@objc(pl)ManiTrustBuilderProtocol(im)configureSDKWithUrl:projectID:apiKey:automaticContactPermission:automaticPushPermission:",
+            "mangledName": "$s13ManiTrust_SDK0aB15BuilderProtocolP09configureC03url9projectID6apiKey26automaticContactPermission0l4PushN0ySS_S2SS2btF",
+            "moduleName": "ManiTrust_SDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : ManiTrust_SDK.ManiTrustBuilderProtocol>",
+            "sugared_genericSig": "<Self where Self : ManiTrust_SDK.ManiTrustBuilderProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "registeredDevice",
+            "printedName": "registeredDevice(tokenDevice:phoneNumber:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ManiTrust_SDK@objc(pl)ManiTrustBuilderProtocol(im)registeredDeviceWithTokenDevice:phoneNumber:",
+            "mangledName": "$s13ManiTrust_SDK0aB15BuilderProtocolP16registeredDevice05tokenG011phoneNumberySS_SStF",
+            "moduleName": "ManiTrust_SDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : ManiTrust_SDK.ManiTrustBuilderProtocol>",
+            "sugared_genericSig": "<Self where Self : ManiTrust_SDK.ManiTrustBuilderProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setupContact",
+            "printedName": "setupContact(contactData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.AnyHashable : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyHashable",
+                    "printedName": "Swift.AnyHashable",
+                    "usr": "s:s11AnyHashableV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ManiTrust_SDK@objc(pl)ManiTrustBuilderProtocol(im)setupContactWithContactData:",
+            "mangledName": "$s13ManiTrust_SDK0aB15BuilderProtocolP12setupContact11contactDataySDys11AnyHashableVypG_tF",
+            "moduleName": "ManiTrust_SDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : ManiTrust_SDK.ManiTrustBuilderProtocol>",
+            "sugared_genericSig": "<Self where Self : ManiTrust_SDK.ManiTrustBuilderProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeDevice",
+            "printedName": "removeDevice(tokenDevice:phoneNumber:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ManiTrust_SDK@objc(pl)ManiTrustBuilderProtocol(im)removeDeviceWithTokenDevice:phoneNumber:",
+            "mangledName": "$s13ManiTrust_SDK0aB15BuilderProtocolP12removeDevice05tokenG011phoneNumberySS_SStF",
+            "moduleName": "ManiTrust_SDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : ManiTrust_SDK.ManiTrustBuilderProtocol>",
+            "sugared_genericSig": "<Self where Self : ManiTrust_SDK.ManiTrustBuilderProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@ManiTrust_SDK@objc(pl)ManiTrustBuilderProtocol",
+        "mangledName": "$s13ManiTrust_SDK0aB15BuilderProtocolP",
+        "moduleName": "ManiTrust_SDK",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ManiTrustBuilder",
+        "printedName": "ManiTrustBuilder",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ManiTrustBuilderProtocol",
+                "printedName": "ManiTrust_SDK.ManiTrustBuilderProtocol",
+                "usr": "c:@M@ManiTrust_SDK@objc(pl)ManiTrustBuilderProtocol"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13ManiTrust_SDK0aB7BuilderC6sharedAA0abD8Protocol_pvpZ",
+            "mangledName": "$s13ManiTrust_SDK0aB7BuilderC6sharedAA0abD8Protocol_pvpZ",
+            "moduleName": "ManiTrust_SDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ManiTrustBuilderProtocol",
+                    "printedName": "ManiTrust_SDK.ManiTrustBuilderProtocol",
+                    "usr": "c:@M@ManiTrust_SDK@objc(pl)ManiTrustBuilderProtocol"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13ManiTrust_SDK0aB7BuilderC6sharedAA0abD8Protocol_pvgZ",
+                "mangledName": "$s13ManiTrust_SDK0aB7BuilderC6sharedAA0abD8Protocol_pvgZ",
+                "moduleName": "ManiTrust_SDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ManiTrustBuilderProtocol",
+                    "printedName": "ManiTrust_SDK.ManiTrustBuilderProtocol",
+                    "usr": "c:@M@ManiTrust_SDK@objc(pl)ManiTrustBuilderProtocol"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13ManiTrust_SDK0aB7BuilderC6sharedAA0abD8Protocol_pvsZ",
+                "mangledName": "$s13ManiTrust_SDK0aB7BuilderC6sharedAA0abD8Protocol_pvsZ",
+                "moduleName": "ManiTrust_SDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13ManiTrust_SDK0aB7BuilderC6sharedAA0abD8Protocol_pvMZ",
+                "mangledName": "$s13ManiTrust_SDK0aB7BuilderC6sharedAA0abD8Protocol_pvMZ",
+                "moduleName": "ManiTrust_SDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "configureSDK",
+            "printedName": "configureSDK(url:projectID:apiKey:automaticContactPermission:automaticPushPermission:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ManiTrust_SDK@objc(cs)ManiTrustBuilder(im)configureSDKWithUrl:projectID:apiKey:automaticContactPermission:automaticPushPermission:",
+            "mangledName": "$s13ManiTrust_SDK0aB7BuilderC09configureC03url9projectID6apiKey26automaticContactPermission0k4PushM0ySS_S2SS2btF",
+            "moduleName": "ManiTrust_SDK",
+            "objc_name": "configureSDKWithUrl:projectID:apiKey:automaticContactPermission:automaticPushPermission:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "registeredDevice",
+            "printedName": "registeredDevice(tokenDevice:phoneNumber:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ManiTrust_SDK@objc(cs)ManiTrustBuilder(im)registeredDeviceWithTokenDevice:phoneNumber:",
+            "mangledName": "$s13ManiTrust_SDK0aB7BuilderC16registeredDevice05tokenF011phoneNumberySS_SStF",
+            "moduleName": "ManiTrust_SDK",
+            "objc_name": "registeredDeviceWithTokenDevice:phoneNumber:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeDevice",
+            "printedName": "removeDevice(tokenDevice:phoneNumber:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ManiTrust_SDK@objc(cs)ManiTrustBuilder(im)removeDeviceWithTokenDevice:phoneNumber:",
+            "mangledName": "$s13ManiTrust_SDK0aB7BuilderC12removeDevice05tokenF011phoneNumberySS_SStF",
+            "moduleName": "ManiTrust_SDK",
+            "objc_name": "removeDeviceWithTokenDevice:phoneNumber:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setupContact",
+            "printedName": "setupContact(contactData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.AnyHashable : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyHashable",
+                    "printedName": "Swift.AnyHashable",
+                    "usr": "s:s11AnyHashableV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ManiTrust_SDK@objc(cs)ManiTrustBuilder(im)setupContactWithContactData:",
+            "mangledName": "$s13ManiTrust_SDK0aB7BuilderC12setupContact11contactDataySDys11AnyHashableVypG_tF",
+            "moduleName": "ManiTrust_SDK",
+            "objc_name": "setupContactWithContactData:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ManiTrustBuilder",
+                "printedName": "ManiTrust_SDK.ManiTrustBuilder",
+                "usr": "c:@M@ManiTrust_SDK@objc(cs)ManiTrustBuilder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ManiTrust_SDK@objc(cs)ManiTrustBuilder(im)init",
+            "mangledName": "$s13ManiTrust_SDK0aB7BuilderCACycfc",
+            "moduleName": "ManiTrust_SDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@ManiTrust_SDK@objc(cs)ManiTrustBuilder",
+        "mangledName": "$s13ManiTrust_SDK0aB7BuilderC",
+        "moduleName": "ManiTrust_SDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "ManiTrustBuilderProtocol",
+            "printedName": "ManiTrustBuilderProtocol",
+            "usr": "c:@M@ManiTrust_SDK@objc(pl)ManiTrustBuilderProtocol",
+            "mangledName": "$s13ManiTrust_SDK0aB15BuilderProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ManiTrust_SDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ManiTrust_SDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ManiTrust_SDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Contacts",
+        "printedName": "Contacts",
+        "declKind": "Import",
+        "moduleName": "ManiTrust_SDK"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}

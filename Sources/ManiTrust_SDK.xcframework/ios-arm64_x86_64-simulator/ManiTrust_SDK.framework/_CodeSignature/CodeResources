@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/ManiTrust_SDK-Swift.h</key>
 		<data>
-		PJd1jv93Kyf775vOYsUuyEZKapk=
+		iSyBhQ+lvVNG+zpiF0kg+iRXTr8=
 		</data>
 		<key>Headers/ManiTrust_SDK.h</key>
 		<data>
@@ -14,35 +14,51 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		/VaoT+vgZyqVVn6E8h4SVi0GrxQ=
+		4jcQMVfaMBpIbFOfg2JG8wQ4OOI=
+		</data>
+		<key>Modules/ManiTrust_SDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<data>
+		4o7U0VJbuaidFiiwLSKsouZWkFw=
+		</data>
+		<key>Modules/ManiTrust_SDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		XDAqY3ztPAqB845PGJsaqioQPXU=
 		</data>
 		<key>Modules/ManiTrust_SDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		HgR2PP58aPNfSlfbwm5kT6ezMT4=
+		eyfRXL6MspPYuPe8snZtVPxR7Ho=
 		</data>
 		<key>Modules/ManiTrust_SDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		PrJu2HAQj1Mswn6aVNot/7yFLLs=
+		XDAqY3ztPAqB845PGJsaqioQPXU=
 		</data>
 		<key>Modules/ManiTrust_SDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		TgyTXnsjZzZYUE6mtiKgZJ9sErE=
+		axu0xs/qfnvOtLDjkLB89Y3/MpA=
+		</data>
+		<key>Modules/ManiTrust_SDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<data>
+		4o7U0VJbuaidFiiwLSKsouZWkFw=
+		</data>
+		<key>Modules/ManiTrust_SDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		kd2kTxPOLt32i/av2z+doLbjB2Q=
 		</data>
 		<key>Modules/ManiTrust_SDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		uJbGbczgyMQUzdaEHSsQt8N/QJU=
+		RNTWyFvX3LgTmyrGlU5VG6Ms3CY=
 		</data>
 		<key>Modules/ManiTrust_SDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		0bncvoBkpEu3nm5j+6UjvJqaBic=
+		kd2kTxPOLt32i/av2z+doLbjB2Q=
 		</data>
 		<key>Modules/ManiTrust_SDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		RJa+4Tv9Ht9v6XAHuFZkHsYbIxs=
+		Lr3d7/H209gnwGumxQ0kLTy1UOo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		rtMDW7YDmAG9lmz2eAEYBj4/8WU=
+		abYxgUgO+H2sLAZPmUb1f3xxe5E=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -51,7 +67,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hjGIRLwqaY2DWaelwRjqH6F5b83ALSssN0H0QdLsVak=
+			qcZik+ijmb9WQ4VRQPgkJCtdhEZCr7r8mbk8DAHMSnc=
 			</data>
 		</dict>
 		<key>Headers/ManiTrust_SDK.h</key>
@@ -61,53 +77,81 @@
 			RqHESqBCttQCbM5FeuzRUZGGUQnL1yNBL6uDDO/ttkA=
 			</data>
 		</dict>
+		<key>Modules/ManiTrust_SDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YPoSycSb/61YrXz7R4eqkt278xFMUkukeFLvXcTaFfY=
+			</data>
+		</dict>
+		<key>Modules/ManiTrust_SDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			UUZ7eqQekjFSOjGywzQdAfp/DtBeaZ0aiAyu5M+CyKU=
+			</data>
+		</dict>
 		<key>Modules/ManiTrust_SDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			N1q9+HrsZGgYRRPxf/JL7EOI490/fL6c/XIs+C5VwoI=
+			AUhDoj+Q8nyuzye/pIAeysPD/bG/ToYRVKkApBNpEsQ=
 			</data>
 		</dict>
 		<key>Modules/ManiTrust_SDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			d305moP3bnnxs9d5q3bAc1EOzFO+Yn4uYy13kT2E0lo=
+			UUZ7eqQekjFSOjGywzQdAfp/DtBeaZ0aiAyu5M+CyKU=
 			</data>
 		</dict>
 		<key>Modules/ManiTrust_SDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3Y59nmU4pzlAlbsQQD/b4C//rxHtH++Tr7anstoSP04=
+			NANhrTYaE3BgT7uLA8HJHHB9suK843TO4pDBSvwGx1o=
+			</data>
+		</dict>
+		<key>Modules/ManiTrust_SDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YPoSycSb/61YrXz7R4eqkt278xFMUkukeFLvXcTaFfY=
+			</data>
+		</dict>
+		<key>Modules/ManiTrust_SDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RJ2ldjhjroGqYfNs8bHjKE9q48lXKQt8vKTd8jJHpn4=
 			</data>
 		</dict>
 		<key>Modules/ManiTrust_SDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CgiYhdAHktrrkMCvUgvzLTZx7SCcvNVu4t1pX0nmY7k=
+			EmrtFKTYZkbdxynMGbM3rUsal1sd5tyibbJOwKGk3Yc=
 			</data>
 		</dict>
 		<key>Modules/ManiTrust_SDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fKLn6qufmrB2XTWeZDZcianqnmEH2cTAEKYIYCb56oM=
+			RJ2ldjhjroGqYfNs8bHjKE9q48lXKQt8vKTd8jJHpn4=
 			</data>
 		</dict>
 		<key>Modules/ManiTrust_SDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NXFQhtybu1cWwbAg2FyXmOtbDtzXOH3NsyNpLb2Slf0=
+			vPdmr0rXP3AMqrjKi6H1njIxOjWGvP1IP7FLYp5u79g=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			P3epehsonepR5o3D9Z8RXGe1BC+LyUXebv30mIDnLro=
+			puOxWe4gvggARtt+CUqGF2hazkrlIKgLFekCd5KJzPY=
 			</data>
 		</dict>
 	</dict>

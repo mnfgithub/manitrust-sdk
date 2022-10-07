@@ -6,6 +6,6 @@ framework module ManiTrust_SDK {
 }
 
 module ManiTrust_SDK.Swift {
-    header "ManiTrust_SDK-Swift.h"
-    requires objc
+  header "ManiTrust_SDK-Swift.h"
+  requires objc
 }
