@@ -13,16 +13,28 @@ import _Concurrency
 import _StringProcessing
 @objc public protocol ManiTrustBuilderProtocol {
   @objc func configureSDK(url: Swift.String, projectID: Swift.String, apiKey: Swift.String, automaticContactPermission: Swift.Bool, automaticPushPermission: Swift.Bool)
-  @objc func registeredDevice(tokenDevice: Swift.String, phoneNumber: Swift.String)
+  @objc func registeredDevice(tokenDevice: Swift.String, phoneNumber: Swift.String, completion: @escaping (ManiTrust_SDK.Response) -> ())
   @objc func setupContact(contactData: [Swift.AnyHashable : Any])
-  @objc func removeDevice(tokenDevice: Swift.String, phoneNumber: Swift.String)
+  @objc func removeDevice(tokenDevice: Swift.String, phoneNumber: Swift.String, completion: @escaping (ManiTrust_SDK.Response) -> ())
 }
 @_inheritsConvenienceInitializers @objc public class ManiTrustBuilder : ObjectiveC.NSObject, ManiTrust_SDK.ManiTrustBuilderProtocol {
   public static var shared: ManiTrust_SDK.ManiTrustBuilderProtocol
   @objc public func configureSDK(url: Swift.String, projectID: Swift.String, apiKey: Swift.String, automaticContactPermission: Swift.Bool, automaticPushPermission: Swift.Bool)
-  @objc public func registeredDevice(tokenDevice: Swift.String, phoneNumber: Swift.String)
-  @objc public func removeDevice(tokenDevice: Swift.String, phoneNumber: Swift.String)
+  @objc public func registeredDevice(tokenDevice: Swift.String, phoneNumber: Swift.String, completion: @escaping (ManiTrust_SDK.Response) -> ())
+  @objc public func removeDevice(tokenDevice: Swift.String, phoneNumber: Swift.String, completion: @escaping (ManiTrust_SDK.Response) -> ())
   @objc public func setupContact(contactData: [Swift.AnyHashable : Any])
   @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class Response : ObjectiveC.NSObject {
+  @objc public var isSuccess: Swift.Bool {
+    get
+  }
+  @objc public var message: Swift.String {
+    get
+  }
+  @objc public var statusCode: Swift.Int {
+    get
+  }
   @objc deinit
 }

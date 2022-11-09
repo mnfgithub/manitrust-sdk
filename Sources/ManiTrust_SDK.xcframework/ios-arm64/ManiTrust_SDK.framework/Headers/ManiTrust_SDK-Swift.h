@@ -253,13 +253,14 @@ using UInt = size_t;
 
 #if defined(__OBJC__)
 @class NSString;
+@class Response;
 
 SWIFT_PROTOCOL("_TtP13ManiTrust_SDK24ManiTrustBuilderProtocol_")
 @protocol ManiTrustBuilderProtocol
 - (void)configureSDKWithUrl:(NSString * _Nonnull)url projectID:(NSString * _Nonnull)projectID apiKey:(NSString * _Nonnull)apiKey automaticContactPermission:(BOOL)automaticContactPermission automaticPushPermission:(BOOL)automaticPushPermission;
-- (void)registeredDeviceWithTokenDevice:(NSString * _Nonnull)tokenDevice phoneNumber:(NSString * _Nonnull)phoneNumber;
+- (void)registeredDeviceWithTokenDevice:(NSString * _Nonnull)tokenDevice phoneNumber:(NSString * _Nonnull)phoneNumber completion:(void (^ _Nonnull)(Response * _Nonnull))completion;
 - (void)setupContactWithContactData:(NSDictionary * _Nonnull)contactData;
-- (void)removeDeviceWithTokenDevice:(NSString * _Nonnull)tokenDevice phoneNumber:(NSString * _Nonnull)phoneNumber;
+- (void)removeDeviceWithTokenDevice:(NSString * _Nonnull)tokenDevice phoneNumber:(NSString * _Nonnull)phoneNumber completion:(void (^ _Nonnull)(Response * _Nonnull))completion;
 @end
 
 
@@ -294,8 +295,8 @@ SWIFT_CLASS("_TtC13ManiTrust_SDK16ManiTrustBuilder")
 ///     phoneNumber - number phone user
 ///   </li>
 /// </ul>
-- (void)registeredDeviceWithTokenDevice:(NSString * _Nonnull)tokenDevice phoneNumber:(NSString * _Nonnull)phoneNumber;
-- (void)removeDeviceWithTokenDevice:(NSString * _Nonnull)tokenDevice phoneNumber:(NSString * _Nonnull)phoneNumber;
+- (void)registeredDeviceWithTokenDevice:(NSString * _Nonnull)tokenDevice phoneNumber:(NSString * _Nonnull)phoneNumber completion:(void (^ _Nonnull)(Response * _Nonnull))completion;
+- (void)removeDeviceWithTokenDevice:(NSString * _Nonnull)tokenDevice phoneNumber:(NSString * _Nonnull)phoneNumber completion:(void (^ _Nonnull)(Response * _Nonnull))completion;
 /// SetupContact - parse data from a push notification for adding or deleting the contact from the contacts list
 /// <ul>
 ///   <li>
@@ -306,6 +307,16 @@ SWIFT_CLASS("_TtC13ManiTrust_SDK16ManiTrustBuilder")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+
+SWIFT_CLASS("_TtC13ManiTrust_SDK8Response")
+@interface Response : NSObject
+@property (nonatomic, readonly) BOOL isSuccess;
+@property (nonatomic, readonly, copy) NSString * _Nonnull message;
+@property (nonatomic, readonly) NSInteger statusCode;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 #endif
 #if defined(__cplusplus)
