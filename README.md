@@ -24,7 +24,7 @@ Once you have your Swift package set up, adding ManiTrust_SDK as a dependency is
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/KevychSolutions/manitrust-SDK.git")
+    .package(url: "https://github.com/mnfgithub/manitrust-sdk.git")
 ]
 ```
 
