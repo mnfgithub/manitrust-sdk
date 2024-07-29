@@ -1,7 +1,7 @@
 framework module ManiTrust_SDK {
   umbrella header "ManiTrust_SDK.h"
-
   export *
+
   module * { export * }
 }
 
