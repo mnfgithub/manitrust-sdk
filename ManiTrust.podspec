@@ -9,7 +9,7 @@ Pod::Spec.new do |spec|
     spec.license        = "https://opensource.org/licenses/MIT"
   spec.author         = { "Manitrust" => "d.kovacs@manifone.com" }
   spec.source         = { :http => "https://github.com/mnfgithub/manitrust-sdk/releases/download/" + ENV['LIB_VERSION'] + "/ManiTrust_SDK.xcframework.zip" }
-  spec.vendored_frameworks = "Sources/ManiTrust_SDK.xcframework"
+  spec.vendored_frameworks = "ManiTrust_SDK.xcframework"
   spec.swift_version             = ['5.0', '5.1', '5.2']
   spec.ios.deployment_target     = '12.0'
   spec.xcconfig                  = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
