@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "ManiTrust_SDK",
+    "printedName": "ManiTrust_SDK",
     "children": [
       {
         "kind": "Import",
@@ -15,6 +15,20 @@
         "kind": "Import",
         "name": "CryptoKit",
         "printedName": "CryptoKit",
+        "declKind": "Import",
+        "moduleName": "ManiTrust_SDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ManiTrust_SDK"
+      },
+      {
+        "kind": "Import",
+        "name": "os.log",
+        "printedName": "os.log",
         "declKind": "Import",
         "moduleName": "ManiTrust_SDK"
       },
@@ -258,6 +272,37 @@
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "enableLogging",
+            "printedName": "enableLogging(enabled:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ManiTrustBuilderProtocol",
+                "printedName": "any ManiTrust_SDK.ManiTrustBuilderProtocol",
+                "usr": "c:@M@ManiTrust_SDK@objc(pl)ManiTrustBuilderProtocol"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ManiTrust_SDK@objc(pl)ManiTrustBuilderProtocol(im)enableLoggingWithEnabled:",
+            "mangledName": "$s13ManiTrust_SDK0aB15BuilderProtocolP13enableLogging7enabledAaB_pSb_tF",
+            "moduleName": "ManiTrust_SDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : ManiTrust_SDK.ManiTrustBuilderProtocol>",
+            "sugared_genericSig": "<Self where Self : ManiTrust_SDK.ManiTrustBuilderProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -269,6 +314,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -577,6 +638,35 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Function",
+            "name": "enableLogging",
+            "printedName": "enableLogging(enabled:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ManiTrustBuilderProtocol",
+                "printedName": "any ManiTrust_SDK.ManiTrustBuilderProtocol",
+                "usr": "c:@M@ManiTrust_SDK@objc(pl)ManiTrustBuilderProtocol"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ManiTrust_SDK@objc(cs)ManiTrustBuilder(im)enableLoggingWithEnabled:",
+            "mangledName": "$s13ManiTrust_SDK0aB7BuilderC13enableLogging7enabledAA0abD8Protocol_pSb_tF",
+            "moduleName": "ManiTrust_SDK",
+            "objc_name": "enableLoggingWithEnabled:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -624,6 +714,20 @@
             "printedName": "ManiTrustBuilderProtocol",
             "usr": "c:@M@ManiTrust_SDK@objc(pl)ManiTrustBuilderProtocol",
             "mangledName": "$s13ManiTrust_SDK0aB15BuilderProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -868,6 +972,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -959,11 +1077,39 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/denes\/manifone\/manitrust-ios\/Sources\/ManiTrustBuilder.swift",
+      "filePath": "\/Users\/denes\/manifone\/manitrust-ios\/Sources\/NetworkManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 517,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/denes\/manifone\/manitrust-ios\/Sources\/ManiTrustLogger.swift",
       "kind": "StringLiteral",
-      "offset": 4830,
-      "length": 8,
-      "value": "\"ManiTrust_SDK.Response\""
+      "offset": 146,
+      "length": 19,
+      "value": "\"com.manitrust.sdk\""
+    },
+    {
+      "filePath": "\/Users\/denes\/manifone\/manitrust-ios\/Sources\/ManiTrustLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 177,
+      "length": 14,
+      "value": "\"ManiTrustSDK\""
+    },
+    {
+      "filePath": "\/Users\/denes\/manifone\/manitrust-ios\/Sources\/Model\/BuilderModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 245,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/denes\/manifone\/manitrust-ios\/Sources\/ManiTrustManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 357,
+      "length": 5,
+      "value": "false"
     }
   ]
 }

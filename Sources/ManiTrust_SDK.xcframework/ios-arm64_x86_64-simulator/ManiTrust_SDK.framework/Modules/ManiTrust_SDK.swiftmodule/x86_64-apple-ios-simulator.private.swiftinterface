@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
-// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name ManiTrust_SDK
+// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name ManiTrust_SDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
 import Contacts
 import CryptoKit
 import Foundation
@@ -11,11 +12,14 @@ import UserNotifications
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+import os.log
+import os
 @objc public protocol ManiTrustBuilderProtocol {
   @objc func configureSDK(url: Swift.String, projectID: Swift.String, apiKey: Swift.String, automaticContactPermission: Swift.Bool, automaticPushPermission: Swift.Bool)
   @objc func registeredDevice(tokenDevice: Swift.String, phoneNumber: Swift.String, completion: @escaping (ManiTrust_SDK.Response) -> ())
   @objc func setupContact(contactData: [Swift.AnyHashable : Any])
   @objc func removeDevice(tokenDevice: Swift.String, phoneNumber: Swift.String, completion: @escaping (ManiTrust_SDK.Response) -> ())
+  @objc func enableLogging(enabled: Swift.Bool) -> any ManiTrust_SDK.ManiTrustBuilderProtocol
 }
 @_inheritsConvenienceInitializers @objc public class ManiTrustBuilder : ObjectiveC.NSObject, ManiTrust_SDK.ManiTrustBuilderProtocol {
   public static var shared: any ManiTrust_SDK.ManiTrustBuilderProtocol
@@ -23,6 +27,7 @@ import _SwiftConcurrencyShims
   @objc public func registeredDevice(tokenDevice: Swift.String, phoneNumber: Swift.String, completion: @escaping (ManiTrust_SDK.Response) -> ())
   @objc public func removeDevice(tokenDevice: Swift.String, phoneNumber: Swift.String, completion: @escaping (ManiTrust_SDK.Response) -> ())
   @objc public func setupContact(contactData: [Swift.AnyHashable : Any])
+  @objc public func enableLogging(enabled: Swift.Bool) -> any ManiTrust_SDK.ManiTrustBuilderProtocol
   @objc override dynamic public init()
   @objc deinit
 }
