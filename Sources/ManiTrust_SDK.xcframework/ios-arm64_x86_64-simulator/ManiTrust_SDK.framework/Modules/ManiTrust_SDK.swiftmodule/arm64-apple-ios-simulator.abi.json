@@ -27,13 +27,6 @@
       },
       {
         "kind": "Import",
-        "name": "os.log",
-        "printedName": "os.log",
-        "declKind": "Import",
-        "moduleName": "ManiTrust_SDK"
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -339,6 +332,59 @@
         "children": [
           {
             "kind": "Var",
+            "name": "sdkVersion",
+            "printedName": "sdkVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@ManiTrust_SDK@objc(cs)ManiTrustBuilder(cpy)sdkVersion",
+            "mangledName": "$s13ManiTrust_SDK0aB7BuilderC10sdkVersionSSvpZ",
+            "moduleName": "ManiTrust_SDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ManiTrust_SDK@objc(cs)ManiTrustBuilder(cm)sdkVersion",
+                "mangledName": "$s13ManiTrust_SDK0aB7BuilderC10sdkVersionSSvgZ",
+                "moduleName": "ManiTrust_SDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "shared",
             "printedName": "shared",
             "children": [
@@ -350,7 +396,7 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:13ManiTrust_SDK0aB7BuilderC6sharedAA0abD8Protocol_pvpZ",
+            "usr": "c:@M@ManiTrust_SDK@objc(cs)ManiTrustBuilder(cpy)shared",
             "mangledName": "$s13ManiTrust_SDK0aB7BuilderC6sharedAA0abD8Protocol_pvpZ",
             "moduleName": "ManiTrust_SDK",
             "static": true,
@@ -358,8 +404,10 @@
               "HasInitialValue",
               "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
+            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -375,65 +423,16 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:13ManiTrust_SDK0aB7BuilderC6sharedAA0abD8Protocol_pvgZ",
+                "usr": "c:@M@ManiTrust_SDK@objc(cs)ManiTrustBuilder(cm)shared",
                 "mangledName": "$s13ManiTrust_SDK0aB7BuilderC6sharedAA0abD8Protocol_pvgZ",
                 "moduleName": "ManiTrust_SDK",
                 "static": true,
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ManiTrustBuilderProtocol",
-                    "printedName": "any ManiTrust_SDK.ManiTrustBuilderProtocol",
-                    "usr": "c:@M@ManiTrust_SDK@objc(pl)ManiTrustBuilderProtocol"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13ManiTrust_SDK0aB7BuilderC6sharedAA0abD8Protocol_pvsZ",
-                "mangledName": "$s13ManiTrust_SDK0aB7BuilderC6sharedAA0abD8Protocol_pvsZ",
-                "moduleName": "ManiTrust_SDK",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13ManiTrust_SDK0aB7BuilderC6sharedAA0abD8Protocol_pvMZ",
-                "mangledName": "$s13ManiTrust_SDK0aB7BuilderC6sharedAA0abD8Protocol_pvMZ",
-                "moduleName": "ManiTrust_SDK",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "_modify"
               }
             ]
           },
@@ -932,6 +931,47 @@
           {
             "kind": "Constructor",
             "name": "init",
+            "printedName": "init(isSuccess:message:statusCode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Response",
+                "printedName": "ManiTrust_SDK.Response",
+                "usr": "c:@M@ManiTrust_SDK@objc(cs)Response"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ManiTrust_SDK@objc(cs)Response(im)initWithIsSuccess:message:statusCode:",
+            "mangledName": "$s13ManiTrust_SDK8ResponseC9isSuccess7message10statusCodeACSb_SSSitcfc",
+            "moduleName": "ManiTrust_SDK",
+            "objc_name": "initWithIsSuccess:message:statusCode:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
             "printedName": "init()",
             "children": [
               {
@@ -965,7 +1005,6 @@
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
-        "hasMissingDesignatedInitializers": true,
         "superclassNames": [
           "ObjectiveC.NSObject"
         ],
@@ -1077,39 +1116,53 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/denes\/manifone\/manitrust-ios\/Sources\/NetworkManager.swift",
+      "filePath": "\/Users\/denes\/manifone\/MANITRUST_ALL\/IOS\/manitrust-ios\/Sources\/NetworkManager.swift",
       "kind": "BooleanLiteral",
       "offset": 517,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/denes\/manifone\/manitrust-ios\/Sources\/ManiTrustLogger.swift",
+      "filePath": "\/Users\/denes\/manifone\/MANITRUST_ALL\/IOS\/manitrust-ios\/Sources\/ManiTrustBuilder.swift",
       "kind": "StringLiteral",
-      "offset": 146,
-      "length": 19,
-      "value": "\"com.manitrust.sdk\""
+      "offset": 877,
+      "length": 7,
+      "value": "\"1.1.0\""
     },
     {
-      "filePath": "\/Users\/denes\/manifone\/manitrust-ios\/Sources\/ManiTrustLogger.swift",
-      "kind": "StringLiteral",
-      "offset": 177,
-      "length": 14,
-      "value": "\"ManiTrustSDK\""
-    },
-    {
-      "filePath": "\/Users\/denes\/manifone\/manitrust-ios\/Sources\/Model\/BuilderModel.swift",
+      "filePath": "\/Users\/denes\/manifone\/MANITRUST_ALL\/IOS\/manitrust-ios\/Sources\/Model\/BuilderModel.swift",
       "kind": "BooleanLiteral",
       "offset": 245,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/denes\/manifone\/manitrust-ios\/Sources\/ManiTrustManager.swift",
+      "filePath": "\/Users\/denes\/manifone\/MANITRUST_ALL\/IOS\/manitrust-ios\/Sources\/ManiTrustManager.swift",
       "kind": "BooleanLiteral",
       "offset": 357,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/denes\/manifone\/MANITRUST_ALL\/IOS\/manitrust-ios\/Sources\/ManiTrustManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 548,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/denes\/manifone\/MANITRUST_ALL\/IOS\/manitrust-ios\/Sources\/ManiTrustManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 779,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/denes\/manifone\/MANITRUST_ALL\/IOS\/manitrust-ios\/Sources\/ManiTrustManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 825,
+      "length": 1,
+      "value": "5"
     }
   ]
 }

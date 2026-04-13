@@ -12,8 +12,6 @@ import UserNotifications
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-import os.log
-import os
 @objc public protocol ManiTrustBuilderProtocol {
   @objc func configureSDK(url: Swift.String, projectID: Swift.String, apiKey: Swift.String, automaticContactPermission: Swift.Bool, automaticPushPermission: Swift.Bool)
   @objc func registeredDevice(tokenDevice: Swift.String, phoneNumber: Swift.String, completion: @escaping (ManiTrust_SDK.Response) -> ())
@@ -22,7 +20,8 @@ import os
   @objc func enableLogging(enabled: Swift.Bool) -> any ManiTrust_SDK.ManiTrustBuilderProtocol
 }
 @_inheritsConvenienceInitializers @objc public class ManiTrustBuilder : ObjectiveC.NSObject, ManiTrust_SDK.ManiTrustBuilderProtocol {
-  public static var shared: any ManiTrust_SDK.ManiTrustBuilderProtocol
+  @objc public static let sdkVersion: Swift.String
+  @objc public static let shared: any ManiTrust_SDK.ManiTrustBuilderProtocol
   @objc public func configureSDK(url: Swift.String, projectID: Swift.String, apiKey: Swift.String, automaticContactPermission: Swift.Bool, automaticPushPermission: Swift.Bool)
   @objc public func registeredDevice(tokenDevice: Swift.String, phoneNumber: Swift.String, completion: @escaping (ManiTrust_SDK.Response) -> ())
   @objc public func removeDevice(tokenDevice: Swift.String, phoneNumber: Swift.String, completion: @escaping (ManiTrust_SDK.Response) -> ())
@@ -31,7 +30,7 @@ import os
   @objc override dynamic public init()
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @objc public class Response : ObjectiveC.NSObject {
+@objc public class Response : ObjectiveC.NSObject {
   @objc public var isSuccess: Swift.Bool {
     get
   }
@@ -41,5 +40,6 @@ import os
   @objc public var statusCode: Swift.Int {
     get
   }
+  @objc public init(isSuccess: Swift.Bool, message: Swift.String, statusCode: Swift.Int)
   @objc deinit
 }

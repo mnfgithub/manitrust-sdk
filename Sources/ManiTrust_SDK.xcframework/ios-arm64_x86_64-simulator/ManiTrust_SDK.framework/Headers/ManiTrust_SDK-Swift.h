@@ -319,6 +319,10 @@ SWIFT_PROTOCOL("_TtP13ManiTrust_SDK24ManiTrustBuilderProtocol_")
 /// ManiTrustBuilder - inItializer for ManiTrust SDK for Apps
 SWIFT_CLASS("_TtC13ManiTrust_SDK16ManiTrustBuilder")
 @interface ManiTrustBuilder : NSObject <ManiTrustBuilderProtocol>
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull sdkVersion;)
++ (NSString * _Nonnull)sdkVersion SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) id <ManiTrustBuilderProtocol> _Nonnull shared;)
++ (id <ManiTrustBuilderProtocol> _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 /// ConfigureSDK - configure SDK with parameters:
 /// <ul>
 ///   <li>
@@ -365,6 +369,7 @@ SWIFT_CLASS("_TtC13ManiTrust_SDK8Response")
 @property (nonatomic, readonly) BOOL isSuccess;
 @property (nonatomic, readonly, copy) NSString * _Nonnull message;
 @property (nonatomic, readonly) NSInteger statusCode;
+- (nonnull instancetype)initWithIsSuccess:(BOOL)isSuccess message:(NSString * _Nonnull)message statusCode:(NSInteger)statusCode OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -698,6 +703,10 @@ SWIFT_PROTOCOL("_TtP13ManiTrust_SDK24ManiTrustBuilderProtocol_")
 /// ManiTrustBuilder - inItializer for ManiTrust SDK for Apps
 SWIFT_CLASS("_TtC13ManiTrust_SDK16ManiTrustBuilder")
 @interface ManiTrustBuilder : NSObject <ManiTrustBuilderProtocol>
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull sdkVersion;)
++ (NSString * _Nonnull)sdkVersion SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) id <ManiTrustBuilderProtocol> _Nonnull shared;)
++ (id <ManiTrustBuilderProtocol> _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 /// ConfigureSDK - configure SDK with parameters:
 /// <ul>
 ///   <li>
@@ -744,6 +753,7 @@ SWIFT_CLASS("_TtC13ManiTrust_SDK8Response")
 @property (nonatomic, readonly) BOOL isSuccess;
 @property (nonatomic, readonly, copy) NSString * _Nonnull message;
 @property (nonatomic, readonly) NSInteger statusCode;
+- (nonnull instancetype)initWithIsSuccess:(BOOL)isSuccess message:(NSString * _Nonnull)message statusCode:(NSInteger)statusCode OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

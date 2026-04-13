@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/ManiTrust_SDK-Swift.h</key>
 		<data>
-		FSHrLMMNP4rYaUh6Ylx1XcnOVEk=
+		YGFkRPKPn8Mz541XB6lusFCdgWI=
 		</data>
 		<key>Headers/ManiTrust_SDK.h</key>
 		<data>
@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		MkUa0CSpAdcNNNTFhSXFm6iw+XU=
+		JkAgvRoeSRPNDXPqrNGFQXxVIPQ=
 		</data>
 		<key>Modules/ManiTrust_SDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		AJe9jvOe9WjCxL25IzH16kMsdlg=
+		nQMGddFKEMBlI5coXvG9mbT3Spc=
 		</data>
 		<key>Modules/ManiTrust_SDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		OrvegAHxI4fhC8krBNL+wu7mmtc=
+		pfvQz/Ci9Pde+NiVkj5bTdpjfK8=
 		</data>
 		<key>Modules/ManiTrust_SDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/ManiTrust_SDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		OrvegAHxI4fhC8krBNL+wu7mmtc=
+		pfvQz/Ci9Pde+NiVkj5bTdpjfK8=
 		</data>
 		<key>Modules/ManiTrust_SDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		/vALyqIMcNFXnbfkAPLCSGGMhdo=
+		oUpGIne/N8swncFrE/2FSqo6k74=
 		</data>
 		<key>Modules/ManiTrust_SDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		AJe9jvOe9WjCxL25IzH16kMsdlg=
+		nQMGddFKEMBlI5coXvG9mbT3Spc=
 		</data>
 		<key>Modules/ManiTrust_SDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		1tKk9dEQFglNs+2lmMGZkJDNIcs=
+		Po3r4AtLlSZ6TMd7Fv4fLItmeZA=
 		</data>
 		<key>Modules/ManiTrust_SDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/ManiTrust_SDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		1tKk9dEQFglNs+2lmMGZkJDNIcs=
+		Po3r4AtLlSZ6TMd7Fv4fLItmeZA=
 		</data>
 		<key>Modules/ManiTrust_SDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		JE5tV8Vy/CS+7CyOQy+pxEMRi/E=
+		TWIveZnmTRQ53Znc8ADe+8DfHi4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -67,7 +67,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			e/T43qBtmVQiQJD6Nh7L5rJhy4FU+mi5CxOBmyMP90E=
+			3J5OntZJMaYkxyxaXJP9J1NODJnbTOA7Ry10/f2P+hY=
 			</data>
 		</dict>
 		<key>Headers/ManiTrust_SDK.h</key>
@@ -81,14 +81,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vJi7rbs0Hsq2MfrT0qObXfsvR91TisllN9fnd6Kl0qU=
+			2wvKfNJeViimwMMlHEh23f+JPWgfxHq9gvyCdwAVZns=
 			</data>
 		</dict>
 		<key>Modules/ManiTrust_SDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			253SfZ2sOZuI1OTacNn0oqriOGedz7+XXhesE0FSuhU=
+			/jjZqW2zdI9AK31pMKysDsSJPHkb7z4t9CpciJ/jc4E=
 			</data>
 		</dict>
 		<key>Modules/ManiTrust_SDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -102,28 +102,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			253SfZ2sOZuI1OTacNn0oqriOGedz7+XXhesE0FSuhU=
+			/jjZqW2zdI9AK31pMKysDsSJPHkb7z4t9CpciJ/jc4E=
 			</data>
 		</dict>
 		<key>Modules/ManiTrust_SDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			grvgjdb+Jw5UUeeQHMpErJStaaH6pd4Ja+9HXL6hdMw=
+			bPM3qVqSdsT2mDPtHlcZaKsBeqMntZlG+tU0k/ZGDkE=
 			</data>
 		</dict>
 		<key>Modules/ManiTrust_SDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vJi7rbs0Hsq2MfrT0qObXfsvR91TisllN9fnd6Kl0qU=
+			2wvKfNJeViimwMMlHEh23f+JPWgfxHq9gvyCdwAVZns=
 			</data>
 		</dict>
 		<key>Modules/ManiTrust_SDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VzhG4w5luVo0+nGBMAmqcLveIgbnjQ3LeE+O1+W4ze8=
+			fx3KFJlzBn/TNqD2DNYOUfuFvPD7uRxJu4dhIL2gzSg=
 			</data>
 		</dict>
 		<key>Modules/ManiTrust_SDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -137,14 +137,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VzhG4w5luVo0+nGBMAmqcLveIgbnjQ3LeE+O1+W4ze8=
+			fx3KFJlzBn/TNqD2DNYOUfuFvPD7uRxJu4dhIL2gzSg=
 			</data>
 		</dict>
 		<key>Modules/ManiTrust_SDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mEgdR/l+Nj2cBBLdFthMXCw2sXsVMxlSpFHrlteqHuo=
+			2a4C/uv4ChZE2o+qd8r+/XApLPvzhjTxai/ozA222qE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
